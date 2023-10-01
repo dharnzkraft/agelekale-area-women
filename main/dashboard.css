@@ -1,0 +1,26 @@
+body{
+    background-color: #ECF5FF;
+}
+#eventTab{
+    display: none;
+}
+
+#ProgramTab{
+    display: none;
+}
+
+#SermonTab{
+    display: none;
+}
+
+#helpTab{
+    display: none;
+}
+
+#memberTab{
+    display: none;
+}
+
+#tabs{
+    display: none;
+}
