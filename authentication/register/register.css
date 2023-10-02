@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#middle{
+/*  display: flex;
+ align-items: center;
+ justify-content: center; */
+ background: rgb(9, 44, 76);
+ /* align-content: center; */
+}
+.color{
+    color: rgb(86, 122, 251);
+}
+.peel{
+    color: rgb(9, 44, 76);
+}
+.form{
+    padding: 20px 30px;
+    width: 100%;
+    
+}
+#exampleInputPassword1{
+    width: 100%;
+}
+form input[type="text"],[type="password"]{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    outline: none;
+    border: none;
+    padding: 15px;
+    
+}
+.mtdiv{
+    margin-top: 65px;
+}
+.button{
+    border: none;
+    outline: none;
+    background: rgb(9, 44, 76);
+    padding: 10px 80px;
+}
+.small{
+    font-size: small;
+    font-weight: 100;
+}
+.welcome{
+    font-size: 60px;
+    margin-top: 150px;
+}
+.fill{
+    top: 23px;
+    left: 18%;
+}
+.fill1{
+    top: 20px;
+    left: 10%;
+}
+.fill2{
+    top: 20px;
+    left: 15%;
+}
+
+@media (max-width: 900px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        
+    }
+    #middle{
+        display: none;
+    }
+    #mine{
+        margin-top: 0 !important;
+    }
+    
+    .form{
+          max-width: 900px !important;
+            width: 100% !important;
+           /*  margin:0 20px; */
+            padding: 40px 20px;
+            display: flex !important;
+            justify-content: center !important;
+            background: rgb(9, 44, 76);
+            height: 100vh;
+            }
+            #container{
+                width: 100vw;
+            }
+            .hype{
+                display: flex;
+                justify-content: center;
+                width: fit-content;
+            }
+            #exampleInputPassword1{
+            max-width: 900px;
+            width: 100% !important;
+            /* margin: 0 30px !important; */
+            }
+            #dream{
+                display: flex;
+                justify-content: center;
+            }
+            .button{
+                background: white;
+                color: rgb(9, 44, 76) !important;
+                font-weight: 600 !important;
+            }
+            .fill{
+                top: 25px;
+                left: 30%;
+            }
+            .fill1{
+                top: 24px;
+                left: 20%;
+            }
+            .fill2{
+                top: 22px;
+                left: 27%;
+            }
+            
+}

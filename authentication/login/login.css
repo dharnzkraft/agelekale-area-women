@@ -1,0 +1,82 @@
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(9, 44, 76);
+    align-content: center;
+   }
+   .color{
+       color: rgb(86, 122, 251);
+   }
+   .peel{
+       color: rgb(9, 44, 76);
+   }
+   .form{
+       margin-top: 180px;
+   }
+   form input[type="email"],[type="password"]{
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+       outline: none;
+       border: none;
+       padding: 15px;
+       
+   }
+   .mtdiv{
+       margin-top: 65px;
+   }
+   .button{
+       border: none;
+       outline: none;
+       background: rgb(9, 44, 76);
+       padding: 10px 80px;
+   }
+   @media (max-width: 900px){
+    *{
+        overflow-x: hidden;
+    }
+    .middle{
+        display: none;
+        }
+    .form{
+        max-width: 900px;
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px;
+        transform: translateY(50%);
+        
+        }
+        #links{
+            max-width: 900px;
+            width: 100%;
+            display: flex !important;
+            justify-content: center !important;
+            align-content: center !important;
+            padding: 10px 10px 10px 10px;
+            margin: 0 auto;
+           }
+           #links #link{
+            text-decoration: none !important;
+            font-size: 20px !important;
+            white-space: nowrap;
+            text-align: center !important;
+            display: flex !important;
+            justify-content: center !important;
+           } 
+           #links #link:first-child{
+            color: white;
+           }
+        #exampleInputEmail1{
+            width: 100%;
+        }
+        #full{
+            background: rgb(9, 44, 76);
+        }
+        .button{
+            background: white;
+            color:rgb(9, 44, 76) !important ;
+        }
+        
+   }
+   

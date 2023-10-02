@@ -7,28 +7,29 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="dashboard.css">
-    <script src="./dashboard.js"></script>
+    <script defer src="./dashboard.js"></script>
+    <script defer src="dash.js"></script>
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body >
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+            <div class="container-fluid px-4">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand" href="#">Logo</a>
+              <img src="/authentication/register/img/R 1.png" alt="">
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#"><img src="/authentication/login/img/Vector (1).png" alt=""></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#"><img src="/authentication/login/img/gg_profile.png" alt=""></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link disabled" aria-disabled="true"><img src="/authentication/login/img/vect.png" alt=""></a>
                   </li>
                 </ul>
                 
@@ -105,14 +106,61 @@
                 </span>
             </div>
             <div id="eventTab" >
-                <p>
-                    Event tab Works!
-                </p>
+               <div class="container-fluid h-100 w-100">
+                <table class="table h-100">
+                    <!-- <caption>List of users</caption> -->
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Theme</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Assembly Event</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">District Event</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Area Event</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+               </div>
             </div>
             <div id="ProgramTab" >
-                <p>
-                    Programs Tab works!
-                </p>
+                   <table class="table">
+                   <thead>
+                    <td>
+                        <th>Weekly Activities</th>
+                        <th>Monthly Activities</th>
+                        <th>Leaders Name</th>
+                        <th>Scheduled Date</th>
+                    </td>
+                   </thead>
+                   <tbody>
+                    <td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </td>
+
+                   </tbody>
+                </table>
+                
             </div>
             <div id="SermonTab" >
                 <p>
@@ -124,10 +172,40 @@
                     Help Tab works!
                 </p>
             </div>
-            <div id="memberTab" >
-                <p>
-                    Member Tab works!
-                </p>
+            <div id="memberTab" class="rounded-5">
+                
+                    <table class="table">
+                        <!-- <caption>List of users</caption> -->
+                        <thead>
+                          <tr>
+                            <th scope="col">Assembly</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone No</th>
+                            <th scope="col">Adress</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Agbelekale</td>
+                            <td>Mark</td>
+                            <td>08033749809</td>
+                            <td>100 ogunbode road</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Abule-egba</td>
+                            <td>Jacob</td>
+                            <td>09022347321</td>
+                            <td>500, ayedaru road</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Ekoro</td>
+                            <td>Larry</td>
+                            <td>07023233785</td>
+                            <td>34, adeyemi close</td>
+                          </tr>
+                        </tbody>
+                      </table>
+              
             </div>
         </div>
         
@@ -136,3 +214,5 @@
     
 </body>
 </html>
+<!-- On rows -->
+<!--  -->

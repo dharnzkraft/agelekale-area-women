@@ -17,14 +17,19 @@
 //     }
 // }
 
+
 function toggleTab(x, y){
     console.log(x,y)
     
     document.getElementById(x).style.display = 'none';
     document.getElementById('tabs').style.display = 'block';
     document.getElementById(y).style.display = 'block';
+
 }
 
 function goBack(){
     window.location.reload()
 }
+
+/*  */
+    
