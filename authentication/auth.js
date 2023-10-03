@@ -120,7 +120,7 @@ const firebaseConfig = {
     var code = document.getElementById('otp').value;
     codeResult.confirm(code).then(function(){
         alert('Account Verified!')
-        window.location.href='http://localhost:5500/main/dashboard.html'
+        window.location.href='https://agbelekale-women.netlify.app/main/dashboard.html'
     }).catch(function(error){
         alert('An error occured!')
         alert(error.message)

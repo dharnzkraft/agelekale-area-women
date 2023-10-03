@@ -65,7 +65,7 @@ function verifyPhone(){
         const userPhone = result.user.phoneNumber
         localStorage.setItem('userNumber', userPhone)
         
-        window.location.href='http://localhost:5500/main/dashboard.html';
+        window.location.href='https://agbelekale-women.netlify.app/main/dashboard.html';
         alert('Sign in Successful!')
       }
   }).catch(function(error){
