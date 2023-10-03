@@ -1,0 +1,18 @@
+body{
+    background: rgb(9, 44, 76);
+}
+h2{
+    color: rgb(86, 122, 251);
+}
+#land{
+    font-size: 80px;
+}
+#page{
+    font-size: 60px;
+}
+@media(max-width: 692px){
+    #land{
+        font-size: ;
+    }
+   
+}
