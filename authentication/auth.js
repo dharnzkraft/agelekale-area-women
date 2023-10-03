@@ -27,6 +27,16 @@ const firebaseConfig = {
     });
   },2000);
 
+  fetchMembers()
+  function fetchMembers(){
+    const database_ref = database.ref('users')
+    database_ref.orderByValue().on( (snapshot)=>{
+        snapshot.forEach((data)=>{
+            console.log(data)
+        })
+    })
+  }
+
   function register(){
     addressed = document.getElementById('addressed').value
     names = document.getElementById('names').value

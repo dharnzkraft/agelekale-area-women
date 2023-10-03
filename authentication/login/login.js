@@ -45,10 +45,6 @@ function login(){
     codeResult = confirmationResult;
     document.getElementById('myForm').style.display = 'none';
     document.getElementById('otpVerification').style.display = 'block';
-
-
-    
-      
   })
   .catch(function(error){
       var error_code = error.code
@@ -64,9 +60,13 @@ function verifyPhone(){
   var code = document.getElementById('otp').value;
   codeResult.confirm(code).then(function(result){
     console.log(result)
+
       if(result.user){
+        const userPhone = result.user.phoneNumber
+        localStorage.setItem('userNumber', userPhone)
+        
+        window.location.href='http://localhost:5500/main/dashboard.html';
         alert('Sign in Successful!')
-        window.location.href='http://localhost:5500/main/dashboard.html'
       }
   }).catch(function(error){
       alert('An error occured!')
