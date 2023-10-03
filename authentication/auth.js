@@ -28,13 +28,14 @@ const firebaseConfig = {
   },2000);
 
   function register(){
+    addressed = document.getElementById('addressed').value
     names = document.getElementById('names').value
     phone = document.getElementById('phone').value.toString()
     assembly = document.getElementById('assembly').value
     role = document.getElementById('role').value
     district = document.getElementById('district').value
 
-    if(validate_field(phone) == false || validate_field(assembly) == false || validate_field(role) == false || validate_field(names) == false || validate_field(district) == false){
+    if(validate_field(phone) == false || validate_field(assembly) == false || validate_field(addressed) == false || validate_field(role) == false || validate_field(names) == false || validate_field(district) == false){
         alert('One or more extra fields is empty!!!')
         return
     }
@@ -51,6 +52,7 @@ const firebaseConfig = {
         var database_ref = database.ref()
 
         var user_data = {
+            addressed: addressed,
             phone: phone,
             names: names,
             assembly: assembly,
@@ -62,6 +64,37 @@ const firebaseConfig = {
         database_ref.child('users/'+ phone).set(user_data)
 
         alert('Registeration Successful!')
+    })
+    .catch(function(error){
+        var error_code = error.code
+        var error_message = error.message
+
+        alert(error_message);
+        document.getElementById('myForm').style.display = 'block';
+        document.getElementById('otpVerification').style.display = 'none';
+    })
+  }
+
+  function login(){
+    phone = document.getElementById('loginPhone').value.toString()
+
+    if(validate_field(phone) == false ){
+        alert('One or more extra fields is empty!!!')
+        return
+    }
+
+    auth.signInWithPhoneNumber( phone, window.recaptchaVerifier)
+    .then(function(confirmationResult){
+        console.log(confirmationResult)
+        window.confirmationResult = confirmationResult;
+        // codeResult = confirmationResult;
+        // document.getElementById('myForm').style.display = 'none';
+        // document.getElementById('otpVerification').style.display = 'block';
+        
+        
+
+
+        alert('Login Successful!')
     })
     .catch(function(error){
         var error_code = error.code
