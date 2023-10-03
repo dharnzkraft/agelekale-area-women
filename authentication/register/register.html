@@ -39,6 +39,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="min-h-100 w-100" id="mine">
         <form class="form row m-0 gap-4" id="myForm">
           <div
@@ -87,7 +89,27 @@
             />
           </div>
 
-          <div
+          
+          <div class="position-relative" id="dream">
+            <!-- <input type="text" class=" " id="exampleInputPassword1" placeholder="Role " required> -->
+            <select
+              name=""
+              data-aos-delay="1900"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="w-100 shadow p-3 border-0"
+              id="role"
+            >
+              <option>--Select Role--</option>
+              <option value="leader">Leader</option>
+              <option value="member">Member</option>
+            </select>
+          </div>
+          
+
+          <div class="row">
+            <div class="col-6">
+              <div
             data-aos-delay="1700"
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -108,46 +130,31 @@
               <option value="abule-egba">Abule-egba</option>
             </select>
           </div>
-          <div class="position-relative" id="dream">
-            <!-- <input type="text" class=" " id="exampleInputPassword1" placeholder="Role " required> -->
-            <select
-              name=""
-              data-aos-delay="1900"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              class="w-100 shadow p-3 border-0"
-              id="role"
-            >
-              <option>--Select Role--</option>
-              <option value="leader">Leader</option>
-              <option value="member">Member</option>
-            </select>
-          </div>
-          <div class="position-relative">
-            <select
-              name=""
-              data-aos-delay="2000"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              class="w-100 shadow p-3 border-0"
-              id="district"
-            >
-              <option>--Select District--</option>
-              <option value="agbelekale">Agbelekale</option>
-              <option value="abule-egba">Abule-egba</option>
-            </select>
+            </div>
+            <div class="col-6">
+              <div class="position-relative">
+                <select
+                  name=""
+                  data-aos-delay="2000"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="w-100 shadow p-3 border-0"
+                  id="district"
+                >
+                  <option>--Select District--</option>
+                  <option value="agbelekale">Agbelekale</option>
+                  <option value="abule-egba">Abule-egba</option>
+                </select>
+              </div>
+            </div>
           </div>
 
           <div
-            data-aos-delay="2000"
-            data-aos="fade-right"
-            data-aos-duration="6000"
+            
             id="recaptcha-container"
           ></div>
           <div
-            data-aos-delay="2000"
-            data-aos="zoom-in-up"
-            data-aos-duration="6000"
+           
             class="mt-4 d-flex justify-content-center"
           >
             <button
