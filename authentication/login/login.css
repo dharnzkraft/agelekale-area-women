@@ -30,6 +30,9 @@
        background: rgb(9, 44, 76);
        padding: 10px 80px;
    }
+   #loginPhone{
+    border: none;
+   }
    @media (max-width: 900px){
     *{
         overflow-x: hidden;

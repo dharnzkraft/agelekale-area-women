@@ -28,7 +28,7 @@ setTimeout(function() {
   recaptchaVerifier.render().then(function(widgetId) {
       window.recaptchaWidgetId = widgetId;
   });
-},2000);
+},6000);
 
 
 function login(){

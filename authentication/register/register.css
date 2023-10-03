@@ -60,6 +60,15 @@ form input[type="text"],[type="password"]{
     top: 20px;
     left: 15%;
 }
+#adressed{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    outline: none;
+    border: none;
+    padding: 15px;
+}
+option{
+    border: none !important;
+}
 
 @media (max-width: 900px){
     *{
@@ -75,6 +84,9 @@ form input[type="text"],[type="password"]{
     #mine{
         margin-top: 0 !important;
     }
+   /*   #otp{
+        width: ;
+     } */
     
     .form{
           max-width: 900px !important;
